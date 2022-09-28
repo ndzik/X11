@@ -58,6 +58,7 @@ module Graphics.X11.Xlib
     module Graphics.X11.Xlib.Region,
     module Graphics.X11.Xlib.Image,
     module Graphics.X11.Xlib.Misc,
+    module Graphics.X11.Xlib.Shm,
   )
 where
 
@@ -65,6 +66,7 @@ import Graphics.X11.Types
 import Graphics.X11.Xlib.Atom
 import Graphics.X11.Xlib.Color
 import Graphics.X11.Xlib.Composite
+import Graphics.X11.Xlib.Shm
 import Graphics.X11.Xlib.Context
 import Graphics.X11.Xlib.Cursor
 import Graphics.X11.Xlib.Display

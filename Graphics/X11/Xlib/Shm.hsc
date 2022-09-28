@@ -1,7 +1,7 @@
 {-# LANGUAGE DeriveDataTypeable #-}
 {-# LANGUAGE ForeignFunctionInterface #-}
 
-module Graphics.X11.Xlib.Shm () where
+module Graphics.X11.Xlib.Shm where
 
 import Data.Data
 import Data.Word
@@ -42,7 +42,7 @@ foreign import ccall "XShmQueryExtension"
   cXShmQueryExtension :: Display -> IO Bool
 
 foreign import ccall "XShmCreateImage"
-  cXShmCreateImage :: Display -> Visual -> CInt -> CInt -> CInt -> CInt -> Ptr Word8 -> Ptr ShmSegmentInfo -> IO Image
+  cXShmCreateImage :: Display -> Visual -> CUInt -> ImageFormat -> Ptr Word8 -> Ptr ShmSegmentInfo -> CUInt -> CUInt -> IO Image
 
 foreign import ccall "XShmAttach"
   cXShmAttach :: Display -> Ptr ShmSegmentInfo -> IO Bool
