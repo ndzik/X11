@@ -8,5 +8,6 @@ nix:
     - pkg-config
     - xorg.libX11
     - xorg.libXScrnSaver
+      xorg.libXcomposite
     - xorg.libXext
     - xorg.libXrandr

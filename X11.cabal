@@ -60,6 +60,7 @@ library
                       Graphics.X11.Xlib.Atom
                       Graphics.X11.Xlib.Color
                       Graphics.X11.Xlib.Context
+                      Graphics.X11.Xlib.Composite
                       Graphics.X11.Xlib.Cursor
                       Graphics.X11.Xlib.Display
                       Graphics.X11.Xlib.Event
@@ -77,7 +78,7 @@ library
   default-language:   Haskell98
   default-extensions: CPP
                       ForeignFunctionInterface
-  extra-libraries:    X11, Xrandr, Xext
+  extra-libraries:    X11, Xrandr, Xext, Xcomposite
   c-sources:          cbits/fdset.c, cbits/auxiliaries.c, cbits/XUtils.c
   includes:           HsXlib.h, HsAllKeysyms.h
   install-includes:   HsXlib.h, XlibExtras.h, HsAllKeysyms.h
