@@ -87,6 +87,11 @@ if ! test "$have_xcomposite" = yes; then
     AC_MSG_ERROR([X11/extensions/Xcomposite.h (from libXcomposite) is required])
 fi
 
+AC_CHECK_HEADERS([X11/extensions/XShm.h], [have_xshm=yes])
+if ! test "$have_xshm" = yes; then
+    AC_MSG_ERROR([X11/extensions/XShm.h (from libXShm) is required])
+fi
+
 AC_MSG_CHECKING([whether to include X.org keysyms])
 AC_ARG_WITH(xorg-keysym,
             AS_HELP_STRING([--without-xorg-keysym], [do not build X.org keysym support]),

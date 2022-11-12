@@ -18,6 +18,7 @@
 #include <X11/Xutil.h>
 
 #include <X11/extensions/Xcomposite.h>
+#include <X11/extensions/XShm.h>
 #include <X11/extensions/Xrandr.h>
 #include <X11/extensions/scrnsaver.h>
 
